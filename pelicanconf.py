@@ -6,10 +6,14 @@ AUTHOR = 'David Hall'
 SITENAME = 'David Hall'
 SITEURL = ''
 
+# Theming
+THEME = 'themes/pelican-themes/pelican-bootstrap3'
+BOOTSTRAP_THEME = 'readable'
+JINJA_EXTENSIONS = ['jinja2.ext.i18n']
+
 PATH = 'content'
 
 TIMEZONE = 'America/New_York'
-
 DEFAULT_LANG = 'en'
 
 # Feed generation is usually not desired when developing
@@ -19,15 +23,8 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
-
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('github', 'https://github.com/davidchall'),)
 
 DEFAULT_PAGINATION = 10
 
@@ -38,6 +35,7 @@ PLUGIN_PATHS = ['pelican-plugins', 'plugins']
 PLUGINS = [
     'liquid_tags.notebook',
     'ipynb.liquid',
+    'i18n_subsites'
 ]
 
-STATIC = ['notebooks']
+STATIC_PATHS = ['notebooks']
