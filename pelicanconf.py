@@ -33,3 +33,11 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+PLUGIN_PATHS = ['pelican-plugins', 'plugins']
+PLUGINS = [
+    'liquid_tags.notebook',
+    'ipynb.liquid',
+]
+
+STATIC = ['notebooks']
