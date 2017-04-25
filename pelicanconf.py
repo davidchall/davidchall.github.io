@@ -16,7 +16,7 @@ PATH = 'content'
 
 TIMEZONE = 'America/New_York'
 DEFAULT_LANG = 'en'
-DISQUS_SITENAME = u'https://davidchall.github.io'
+DISQUS_SITENAME = u'davidchall'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
