@@ -4,8 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'David Hall'
 SITENAME = 'David Hall'
-SITEURL = 'https://davidchall.github.io'
-DISQUS_SITENAME = 'davidchall'
+SITEURL = ''
 
 # Theming
 THEME = 'themes/pelican-themes/pelican-bootstrap3'
@@ -31,7 +30,7 @@ SOCIAL = (('github', 'https://github.com/davidchall'),)
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
 
 PLUGIN_PATHS = ['pelican-plugins', 'plugins']
 PLUGINS = [
