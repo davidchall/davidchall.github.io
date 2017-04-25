@@ -4,7 +4,8 @@ from __future__ import unicode_literals
 
 AUTHOR = 'David Hall'
 SITENAME = 'David Hall'
-SITEURL = ''
+SITEURL = 'https://davidchall.github.io'
+DISQUS_SITENAME = 'davidchall'
 
 # Theming
 THEME = 'themes/pelican-themes/pelican-bootstrap3'
@@ -16,7 +17,6 @@ PATH = 'content'
 
 TIMEZONE = 'America/New_York'
 DEFAULT_LANG = 'en'
-DISQUS_SITENAME = u'davidchall'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
