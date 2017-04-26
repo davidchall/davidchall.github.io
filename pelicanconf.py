@@ -4,7 +4,6 @@ from __future__ import unicode_literals
 
 AUTHOR = 'David Hall'
 SITENAME = 'David C Hall'
-SITEURL = ''
 
 # Theming
 THEME = 'themes/pelican-themes/pelican-bootstrap3'
@@ -27,7 +26,10 @@ AUTHOR_FEED_RSS = None
 # Social widget
 SOCIAL = (('github', 'https://github.com/davidchall'),)
 
+DISPLAY_CATEGORIES_ON_MENU = False
 DEFAULT_PAGINATION = 10
+
+DIRECT_TEMPLATES = ['index', 'categories', 'authors', 'archives', 'search']
 
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
@@ -36,7 +38,9 @@ PLUGIN_PATHS = ['pelican-plugins', 'plugins']
 PLUGINS = [
     'liquid_tags.notebook',
     'ipynb.liquid',
-    'i18n_subsites'
+    'i18n_subsites',
+    'tipue_search',
 ]
 
 STATIC_PATHS = ['notebooks']
+ARCHIVES_SAVE_AS = 'archives.html'
