@@ -1,0 +1,378 @@
+Resume
+######
+
+.. raw:: html
+
+		<style>
+			li:not(:last-child) { padding-bottom: 12px; }
+		</style>
+
+		<ul class="nav nav-tabs">
+			<li class="active"><a data-toggle="tab" href="#experience"><i class="fa fa-flask"></i> Experience</a></li>
+		  <li><a data-toggle="tab" href="#education"><i class="fa fa-graduation-cap"></i> Education</a></li>
+		  <li><a data-toggle="tab" href="#computing"><i class="fa fa-file-code-o"></i> Computing Skills</a></li>
+		  <li><a data-toggle="tab" href="#publications"><i class="fa fa-book"></i> Publications</a></li>
+		</ul>
+
+		<div class="tab-content">
+
+			<!-- Research Experience -->
+		  <div id="experience" class="tab-pane fade in active">
+		    <div class="panel-group" id="exp_accordion">
+
+		      <div class="panel panel-default">
+		        <div class="panel-heading">
+		          <h4 class="panel-title">
+		            <a data-toggle="collapse" data-parent="#exp_accordion" href="#exp_collapse1">
+		            	<div class="panel-title pull-left">Harvard Medical School &amp; Massachusetts General Hospital</div>
+		            	<div class="panel-title pull-right">Boston, MA</div>
+		            	<div class="clearfix"></div>
+		            	<div class="panel-title pull-left">Research Fellow</div>
+		            	<div class="panel-title pull-right">Apr 2015 &ndash; Present</div>
+		            	<div class="clearfix"></div>
+		            </a>
+		          </h4>
+		        </div>
+		        <div id="exp_collapse1" class="panel-collapse collapse in">
+		          <div class="panel-body">
+		          	<ul>
+		          		<li>Core developer of <a href="http://topas.readthedocs.io">TOPAS</a> &ndash; Monte Carlo simulation software for radiation oncology</li>
+		          		<li>Devised a novel Monte Carlo algorithm to sample directions within an elliptical cone</li>
+		          		<li>Predicted the benefits of proton therapy based upon patient-specific anatomy for skull-base (41 patients), lung (104 pts) and prostate (119 pts) cancer cohorts. Implemented a custom regression model in scikit-learn, which yielded predictions within 1 second. The cross-validated accuracy and training/prediction times were compared to a random forest model.</li>
+		          	</ul>
+		          </div>
+		        </div>
+		      </div>
+
+		      <div class="panel panel-default">
+		        <div class="panel-heading">
+		          <h4 class="panel-title">
+		            <a data-toggle="collapse" data-parent="#exp_accordion" href="#exp_collapse2">
+		            	<div class="panel-title pull-left">University of Oxford &amp; CERN</div>
+		            	<div class="panel-title pull-right">Oxford, UK &amp; Geneva, Switzerland</div>
+		            	<div class="clearfix"></div>
+		            	<div class="panel-title pull-left">Postdoctoral Research Assistant</div>
+		            	<div class="panel-title pull-right">Jun 2014 &ndash; Mar 2015</div>
+		            	<div class="clearfix"></div>
+		            </a>
+		          </h4>
+		        </div>
+		        <div id="exp_collapse2" class="panel-collapse collapse">
+		          <div class="panel-body">
+		          <ul>
+		          	<li>Team leader of 5 CERN physicists to infer the underlying kinematics of the Higgs boson by deconvolving detector effects using an iterative Bayesian approach. This novel data analysis was the first of its kind in the $H \rightarrow WW$ decay channel.</li>
+		          	<li>Monte Carlo Software Coordinator for the ATLAS Experiment &ndash; responsible for the simulation framework in preparation for Run 2 of the Large Hadron Collider. This involved adding new features and interfacing existing Fortran, C++ and Python code.</li>
+		          </ul>
+		          </div>
+		        </div>
+		      </div>
+
+		      <div class="panel panel-default">
+		        <div class="panel-heading">
+		          <h4 class="panel-title">
+		            <a data-toggle="collapse" data-parent="#exp_accordion" href="#exp_collapse3">
+		            	<div class="panel-title pull-left">Arbtree Research Ltd</div>
+		            	<div class="panel-title pull-right">Oxford, UK</div>
+		            	<div class="clearfix"></div>
+		            	<div class="panel-title pull-left">Consultant Physicist</div>
+		            	<div class="panel-title pull-right">Oct 2014 &ndash; Mar 2015</div>
+		            	<div class="clearfix"></div>
+		            </a>
+		          </h4>
+		        </div>
+		        <div id="exp_collapse3" class="panel-collapse collapse">
+		          <div class="panel-body">
+		          <ul>
+		          	<li>Developed C++ algorithms for audio signal processing and recognition</li>
+		          </ul>
+		          </div>
+		        </div>
+		      </div>
+
+		      <div class="panel panel-default">
+		        <div class="panel-heading">
+		          <h4 class="panel-title">
+		            <a data-toggle="collapse" data-parent="#exp_accordion" href="#exp_collapse4">
+		            	<div class="panel-title pull-left">University of Oxford &amp; CERN</div>
+		            	<div class="panel-title pull-right">Oxford, UK &amp; Geneva, Switzerland</div>
+		            	<div class="clearfix"></div>
+		            	<div class="panel-title pull-left">Doctoral Student</div>
+		            	<div class="panel-title pull-right">Oct 2010 &ndash; Jun 2014</div>
+		            	<div class="clearfix"></div>
+		            </a>
+		          </h4>
+		        </div>
+		        <div id="exp_collapse4" class="panel-collapse collapse">
+		          <div class="panel-body">
+		          <ul>
+		          	<li>Core team member of the flagship search for the Higgs boson at the Large Hadron Collider</li>
+								<li>Processed petabytes of empirical and simulated data with worldwide distributed computing</li>
+								<li>Built a statistical model describing the contributions from signal and background processes, constrained and validated by observations in &quot;control regions&quot;</li>
+								<li>Devised and validated new techniques that contributed to a 50% improvement in the expected $Z$-score (the most sensitive standalone measurement of the Higgs boson to date). These techniques were quickly adopted by other analysis groups and our competitor experiment.</li>
+								<li>Investigated radiation induced attenuation of optical fibres at low temperatures, which required time series analysis with fibre-dependent time lags</li>
+								<li>Regularly presented findings at collaboration meetings and international conferences</li>
+								<li>Spoke at science outreach events to audiences ranging from 6-year-olds to postgraduates and volunteered at science exhibitions at the Royal Society and London Science Museum</li>
+								<li>Undergraduate teaching: 3rd year sub-atomic physics tutorials and 2nd year optics laboratory</li>
+		          </ul>
+		          </div>
+		        </div>
+		      </div>
+
+		    </div>
+		  </div>
+
+
+			<!-- Education -->
+		  <div id="education" class="tab-pane fade">
+		    <div class="panel-group" id="edu_accordion">
+
+		      <div class="panel panel-default">
+		        <div class="panel-heading">
+		          <h4 class="panel-title">
+		            <a data-toggle="collapse" data-parent="#edu_accordion" href="#edu_collapse1">
+		            	<div class="panel-title pull-left">University of Oxford</div>
+		            	<div class="panel-title pull-right">Oxford, UK</div>
+		            	<div class="clearfix"></div>
+		            	<div class="panel-title pull-left">DPhil, Experimental Particle Physics</div>
+		            	<div class="panel-title pull-right">2014</div>
+		            	<div class="clearfix"></div>
+		            </a>
+		          </h4>
+		        </div>
+		        <div id="edu_collapse1" class="panel-collapse collapse in">
+		          <div class="panel-body">
+		          	<h5>Details:</h5>
+		          	<ul>
+		          		<li>Thesis: <a href="http://dx.doi.org/10.1007/978-3-319-19989-4">Discovery and measurement of the Higgs boson in the WW decay channel</a></li>
+		          	</ul>
+
+		          	<br>
+		          	<h5>Awards &amp; Honors:</h5>
+		          	<table class = "table table-hover">
+          	      <tr>
+          	         <th>Year</th>
+          	         <th>Award</th>
+          	         <th>Description</th>
+          	      </tr>
+
+          	      <tr>
+          	         <td>2015</td>
+          	         <td>Springer Thesis Prize</td>
+          	         <td>International award recognizing the impact of my research</td>
+          	      </tr>
+
+          	      <tr>
+          	         <td>2014</td>
+          	         <td>SFTC STEP Award</td>
+          	         <td>Funds postdoctoral research for the most promising young investigators</td>
+          	      </tr>
+
+          	      <tr>
+          	         <td>2013</td>
+          	         <td>Light Senior Scholar</td>
+          	         <td>Awarded for academic excellence by St Catherine's College, Oxford</td>
+          	      </tr>
+
+          	      <tr>
+          	         <td>2012</td>
+          	         <td>Science Scholar</td>
+          	         <td>Awarded for academic excellence by St Catherine's College, Oxford</td>
+          	      </tr>
+          	    </table>
+		          </div>
+		        </div>
+		      </div>
+
+		      <div class="panel panel-default">
+		        <div class="panel-heading">
+		          <h4 class="panel-title">
+		            <a data-toggle="collapse" data-parent="#edu_accordion" href="#edu_collapse2">
+		            	<div class="panel-title pull-left">University of Warwick</div>
+		            	<div class="panel-title pull-right">Coventry, UK</div>
+		            	<div class="clearfix"></div>
+		            	<div class="panel-title pull-left">MPhys, Physics</div>
+		            	<div class="panel-title pull-right">2010</div>
+		            	<div class="clearfix"></div>
+		            </a>
+		          </h4>
+		        </div>
+		        <div id="edu_collapse2" class="panel-collapse collapse">
+		          <div class="panel-body">
+		          	<h5>Details:</h5>
+		          	<ul>
+		          		<li>Received a first class degree with honors (equivalent to a 4.0 GPA)</li>
+		          	</ul>
+
+		          	<br>
+		            <h5>Awards &amp; Honors:</h5>
+		          	<table class = "table table-hover">
+          	      <tr>
+          	         <th>Year</th>
+          	         <th>Award</th>
+          	         <th>Description</th>
+          	      </tr>
+
+          	      <tr>
+          	         <td>2010</td>
+          	         <td>Styles Prize</td>
+          	         <td>Best performance (93%) in graduating class at Physics Department</td>
+          	      </tr>
+
+          	      <tr>
+          	         <td>2009</td>
+          	         <td>EPSRC Scholarship</td>
+          	         <td>Competitive undergraduate research grant</td>
+          	      </tr>
+          	    </table>
+		          </div>
+		        </div>
+
+		      </div>
+		    </div>
+		  </div>
+
+
+		  <!-- Computing Skills -->
+		  <div id="computing" class="tab-pane fade">
+      	<table class = "table table-hover">
+  	      <tr>
+  	         <td><b>C/C++</b></td>
+  	         <td>Standard library, Boost, CMake, GNU Make, ROOT</td>
+  	      </tr>
+
+  	      <tr>
+  	         <td><b>Python</b></td>
+  	         <td>Standard library, NumPy, SciPy, matplotlib, Pandas, scikit-learn</td>
+  	      </tr>
+
+  	      <tr>
+  	         <td><b>Other Languages</b></td>
+  	         <td>MATLAB, LabVIEW, Fortran, bash</td>
+  	      </tr>
+
+  	      <tr>
+  	         <td><b>Source Control</b></td>
+  	         <td>git, mercurial, SVN</td>
+  	      </tr>
+
+  	      <tr>
+  	         <td><b>Document Editing</b></td>
+  	         <td>Microsoft Office, iWork, $\LaTeX$, Adobe Illustrator</td>
+  	      </tr>
+  	    </table>
+		  </div>
+
+
+		  <!-- Publications -->
+		  <div id="publications" class="tab-pane fade">
+		  	<div class="panel-group" id="pub_accordion">
+
+		      <div class="panel panel-default">
+		        <div class="panel-heading">
+		          <h4 class="panel-title">
+		            <a data-toggle="collapse" data-parent="#pub_accordion" href="#pub_collapse1">
+		            	<div class="panel-title pull-left">Peer-Reviewed Articles</div>
+		            	<div class="clearfix"></div>
+		            </a>
+		          </h4>
+		        </div>
+		        <div id="pub_collapse1" class="panel-collapse collapse in">
+		          <div class="panel-body">
+				      	<ol>
+				      		<li>TSA Underwood, W Sung, CH McFadden, SJ McMahon, <b>DC Hall</b>, AL McNamara, H Paganetti, GO Sawakuchi and J Schuemann, Comparing stochastic proton interactions simulated using TOPAS-nBio to experimental data from fluorescent nuclear track detectors, <i>Phys. Med. Biol.</i> <b>62</b> 3237-3249 (2017) <a href="https://doi.org/10.1088/1361-6560/aa6429">doi: 10.1088/1361-6560/aa6429</a></li>
+
+				      		<li><b>DC Hall</b>, AV Trofimov, BA Winey, NJ Liebsch and H Paganetti, Predicting patient-specific dosimetric benefits of proton therapy for skull-base tumors using a geometric knowledge-based method, <i>Int. J. Radiat. Oncol. Biol. Phys.</i> <b>97</b> 1087 (2017) <a href="http://dx.doi.org/10.1016/j.ijrobp.2017.01.236">doi: 10.1016/j.ijrobp.2017.01.236</a></li>
+
+				      		<li>ATLAS Collaboration, Measurement of fiducial differential cross sections of gluon-fusion production of Higgs bosons decaying to $WW^*$→eνμν with the ATLAS detector at √s=8 TeV, <i>J. High Energy Phys.</i> <b>2016</b> 104 (2016) <a href="http://dx.doi.org/10.1007/JHEP08(2016)104">doi: 10.1007/JHEP08(2016)104</a></li>
+
+				      		<li><b>DC Hall</b>, A Makarova, H Paganetti and B Gottschalk, Validation of nuclear models in Geant4 using the dose distribution of a 177 MeV proton pencil beam, <i>Phys. Med. Biol.</i> <b>61</b> N1-10 (2016) <a href="http://dx.doi.org/10.1088/0031-9155/61/1/N1">doi: 10.1088/0031-9155/61/1/N1</a></li>
+
+				      		<li>ATLAS Collaboration, Observation and measurement of Higgs boson decays to $WW^*$ with the ATLAS detector, <i>Phys. Rev. D</i> <b>92</b> 012006 (2015) <a href="https://doi.org/10.1103/PhysRevD.92.012006">doi: 10.1103/PhysRevD.92.012006</a></li>
+
+				      		<li>ATLAS Collaboration, Measurements of Higgs boson production and couplings in diboson final states with the ATLAS detector at the LHC, <i>Phys. Lett. B</i> <b>726</b> 88 (2013) <a href="https://doi.org/10.1016/j.physletb.2013.08.010">doi: 10.1016/j.physletb.2013.08.010</a></li>
+
+				      		<li>ATLAS Collaboration, Measurement of $W^+W^−$ production in pp collisions at √s = 7 TeV with the ATLAS detector and limits on anomalous WWZ and WWγ couplings, <i>Phys. Rev. D</i> <b>87</b> 112001 (2013) <a href="https://doi.org/10.1103/PhysRevD.87.112001">doi: 10.1103/PhysRevD.87.112001</a></li>
+
+				      		<li>ATLAS Collaboration, A particle consistent with the Higgs boson observed with the ATLAS detector at the Large Hadron Collider, <i>Science</i> <b>338</b> 1576 (2012) <a href="https://doi.org/10.1126/science.1232005">doi: 10.1126/science.1232005</a></li>
+
+				      		<li>ATLAS Collaboration, Observation of a new particle in the search for the Standard Model Higgs boson with the ATLAS detector at the LHC, <i>Phys. Lett. B</i> <b>716</b> 1 (2012) <a href="https://doi.org/10.1016/j.physletb.2012.08.020">doi: 10.1016/j.physletb.2012.08.020</a></li>
+
+				      		<li>ATLAS Collaboration, Measurement of the $WW$ cross section in √s = 7 TeV pp collisions with the ATLAS detector and limits on anomalous gauge couplings, <i>Phys. Lett. B</i> <b>712</b> 289 (2012) <a href="https://doi.org/10.1016/j.physletb.2012.05.003">doi: 10.1016/j.physletb.2012.05.003</a></li>
+
+				      		<li><b>DC Hall</b>, P Hamilton, BT Huffman, PK Teng and AR Weidberg, The radiation tolerance of MTP and LC optical fibre connectors to 500 kGy(Si) of gamma radiation, <i>J. Instrum.</i> <b>7</b> P04014 (2012) <a href="https://doi.org/10.1088/1748-0221/7/04/P04014">doi: 10.1088/1748-0221/7/04/P04014</a></li>
+
+				      		<li><b>D Hall</b>, BT Huffman and A Weidberg, The radiation induced attenuation of optical fibres below −20°C exposed to lifetime HL-LHC doses at a dose rate of 700 Gy(Si)/hr, <i>J. Instrum.</i> <b>7</b> C01047 (2012) <a href="https://doi.org/10.1088/1748-0221/7/01/C01047">doi: 10.1088/1748-0221/7/01/C01047</a></li>
+
+				      		<li>F Vasey, <b>D Hall</b>, T Huffman, S Kwan, A Prosser, C Soos, J Troska, A Weidberg, A Xiang and J. Ye, The Versatile Link common project: feasibility report, <i>J. Instrum.</i> <b>7</b> C01075 (2012) <a href="https://doi.org/10.1088/1748-0221/7/01/C01075">doi: 10.1088/1748-0221/7/01/C01075</a></li>
+				      	</ol>
+				      </div>
+				    </div>
+				  </div>
+
+					<div class="panel panel-default">
+		        <div class="panel-heading">
+		          <h4 class="panel-title">
+		            <a data-toggle="collapse" data-parent="#pub_accordion" href="#pub_collapse2">
+		            	<div class="panel-title pull-left">Books</div>
+		            	<div class="clearfix"></div>
+		            </a>
+		          </h4>
+		        </div>
+		        <div id="pub_collapse2" class="panel-collapse collapse">
+		          <div class="panel-body">
+				      	<ol>
+				      		<li><b>D Hall</b>, Discovery and measurement of the Higgs boson in the $WW$ decay channel (Springer, Switzerland: 2015) <a href="https://doi.org/10.1007/978-3-319-19989-4">doi: 10.1007/978-3-319-19989-4</a></li>
+				      	</ol>
+				      </div>
+				    </div>
+					</div>
+
+					<div class="panel panel-default">
+		        <div class="panel-heading">
+		          <h4 class="panel-title">
+		            <a data-toggle="collapse" data-parent="#pub_accordion" href="#pub_collapse3">
+		            	<div class="panel-title pull-left">Book Chapters</div>
+		            	<div class="clearfix"></div>
+		            </a>
+		          </h4>
+		        </div>
+		        <div id="pub_collapse3" class="panel-collapse collapse">
+		          <div class="panel-body">
+				      	<ol>
+				      		<li>LHC Higgs Cross Section Working Group, Gluon-gluon fusion production mode. In <i>Handbook of LHC Higgs Cross Sections: 3. Higgs Properties</i>, Eds. S Heinemeier, C Mariotti, G Passarino, R Tanaka (CERN, Switzerland: 2013) <a href="https://doi.org/10.5170/CERN-2013-004">doi: 10.5170/CERN-2013-004</a></li>
+				      	</ol>
+				      </div>
+				    </div>
+					</div>
+
+					<div class="panel panel-default">
+		        <div class="panel-heading">
+		          <h4 class="panel-title">
+		            <a data-toggle="collapse" data-parent="#pub_accordion" href="#pub_collapse4">
+		            	<div class="panel-title pull-left">Conference Proceedings</div>
+		            	<div class="clearfix"></div>
+		            </a>
+		          </h4>
+		        </div>
+		        <div id="pub_collapse4" class="panel-collapse collapse">
+		          <div class="panel-body">
+				      	<ol>
+				      		<li>ATLAS Collaboration, Measurements of the properties of the Higgs-like boson in the $WW^{(*)}$→lνlν decay channel with the ATLAS detector using 25 fb−1 of proton-proton collision data, at <i>48th Rencontres de Moriond on QCD and High Energy Interactions</i>, La Thuile, Italy (2013) <a href="https://cds.cern.ch/record/1527126">ATLAS-CONF-2013-030</a></li>
+
+				      		<li>ATLAS Collaboration, Update of the $H→WW^{(*)}→eνμν$ analysis with 13 fb$^{−1}$ of √s=8 TeV data collected with the ATLAS detector, at <i>Hadronic Collider Physics Symposium</i>, Kyoto, Japan (2012) <a href="https://cds.cern.ch/record/1493601">ATLAS-CONF-2012-158</a></li>
+
+				      		<li>ATLAS Collaboration, Observation of an Excess of Events in the Search for the Standard Model Higgs Boson in the $H→WW^{(*)}→lνlν$ Channel with the ATLAS Detector, at <i>International Conference on High Energy Physics</i>, Melbourne, Australia (2012) <a href="https://cds.cern.ch/record/1462530">ATLAS-CONF-2012-098</a></li>
+
+				      		<li>ATLAS Collaboration, Search for the Standard Model Higgs boson in the $H→WW^{(*)}→lνlν$ decay mode using Multivariate Techniques with 4.7 fb$^{−1}$ of ATLAS data at √s= 7 TeV, at <i>47th Rencontres de Moriond on Electroweak Interactions and Unified Theories</i>, La Thuile, Italy (2012) <a href="https://cds.cern.ch/record/1454675">ATLAS-CONF-2012-060</a></li>
+
+				      		<li>ATLAS Collaboration, Measurement of the $W^+W^−$ production cross section in proton-proton collisions at √s=7 TeV with the ATLAS detector, at <i>47th Rencontres de Moriond on Electroweak Interactions and Unified Theories</i>, La Thuile, Italy (2012) <a href="http://cds.cern.ch/record/1430734">ATLAS-CONF-2012-025</a></li>
+				      	</ol>
+				      </div>
+				    </div>
+					</div>
+
+				</div>
+		  </div>
+		</div>
+
+

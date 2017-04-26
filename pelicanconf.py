@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'David Hall'
-SITENAME = 'David Hall'
+SITENAME = 'David C Hall'
 SITEURL = ''
 
 # Theming
