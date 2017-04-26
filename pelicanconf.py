@@ -8,7 +8,7 @@ SITEURL = ''
 
 # Theming
 THEME = 'themes/pelican-themes/pelican-bootstrap3'
-BOOTSTRAP_THEME = 'readable'
+BOOTSTRAP_THEME = 'flatly'
 PYGMENTS_STYLE = 'emacs'
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 
