@@ -4,7 +4,7 @@ Resume
 .. raw:: html
 
 		<style>
-			li:not(:last-child) { padding-bottom: 12px; }
+			#resume li:not(:last-child) { padding-bottom: 12px; }
 		</style>
 
 		<ul class="nav nav-tabs">
@@ -14,7 +14,7 @@ Resume
 		  <li><a data-toggle="tab" href="#publications"><i class="fa fa-book"></i> Publications</a></li>
 		</ul>
 
-		<div class="tab-content">
+		<div class="tab-content" id="resume">
 
 			<!-- Research Experience -->
 		  <div id="experience" class="tab-pane fade in active">
