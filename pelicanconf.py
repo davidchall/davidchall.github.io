@@ -4,14 +4,15 @@ from __future__ import unicode_literals
 
 AUTHOR = 'David Hall'
 SITENAME = 'David C Hall'
+AVATAR = 'images/profile.png'
+ABOUT_ME = 'Postdoc in Radiation Oncology Physics'
 
 # Theming
 THEME = 'themes/pelican-themes/pelican-bootstrap3'
 BOOTSTRAP_THEME = 'flatly'
 PYGMENTS_STYLE = 'emacs'
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
-
-PATH = 'content'
+SIDEBAR_ON_LEFT = True
 
 TIMEZONE = 'America/New_York'
 DEFAULT_LANG = 'en'
@@ -24,7 +25,8 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Social widget
-SOCIAL = (('github', 'https://github.com/davidchall'),)
+SOCIAL = (('github', 'https://github.com/davidchall'),
+          ('linkedin', 'https://www.linkedin.com/in/davidchristopherhall'))
 
 DISPLAY_CATEGORIES_ON_MENU = False
 DEFAULT_PAGINATION = 10
@@ -40,7 +42,9 @@ PLUGINS = [
     'ipynb.liquid',
     'i18n_subsites',
     'tipue_search',
+    'tag_cloud',
 ]
 
-STATIC_PATHS = ['notebooks']
+PATH = 'content'
+STATIC_PATHS = ['images', 'notebooks']
 ARCHIVES_SAVE_AS = 'archives.html'
