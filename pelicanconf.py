@@ -43,7 +43,6 @@ PLUGINS = [
     'i18n_subsites',
     'tipue_search',
     'tag_cloud',
-    'render_math',
 ]
 
 PATH = 'content'
