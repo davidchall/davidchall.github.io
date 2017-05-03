@@ -25,8 +25,11 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Social widget
-SOCIAL = (('github', 'https://github.com/davidchall'),
-          ('linkedin', 'https://www.linkedin.com/in/davidchristopherhall'))
+SOCIAL = (
+    ('linkedin', 'https://www.linkedin.com/in/davidchristopherhall'),
+    ('github', 'https://github.com/davidchall'),
+    ('stackoverflow', 'http://stackoverflow.com/users/2669425/david-hall', 'stack-overflow'),
+)
 
 DISPLAY_CATEGORIES_ON_MENU = False
 DEFAULT_PAGINATION = 10
