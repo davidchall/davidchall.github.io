@@ -29,6 +29,7 @@ SOCIAL = (
     ('linkedin', 'https://www.linkedin.com/in/davidchristopherhall'),
     ('github', 'https://github.com/davidchall'),
     ('stackoverflow', 'http://stackoverflow.com/users/2669425/david-hall', 'stack-overflow'),
+    ('google scholar', 'https://scholar.google.com/citations?user=Z3MBXFcAAAAJ'),
 )
 
 DISPLAY_CATEGORIES_ON_MENU = False
