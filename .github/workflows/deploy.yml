@@ -19,5 +19,5 @@ jobs:
         pip install ghp-import
     - name: Deploy to master branch
       run: |
-        ghp-import -m "Generate Pelican site" -b master public
+        ghp-import -m "Deploy Blogdown site" -b master public
         git push -fq https://${{ secrets.GITHUB_TOKEN }}@github.com/davidchall/davidchall.github.io master
