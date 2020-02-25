@@ -14,6 +14,7 @@ email: ""
 interests:
 - Statistics
 - Predictive modeling
+- Natural language processing
 - Public understanding of science
 name: David Hall
 role: Data Scientist & Recovering Physicist
