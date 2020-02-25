@@ -20,4 +20,4 @@ jobs:
     - name: Deploy to master branch
       run: |
         ghp-import -m "Deploy Blogdown site" -b master public
-        git push -fq https://${{ secrets.GITHUB_TOKEN }}@github.com/davidchall/davidchall.github.io master
+        git push -fq https://${{github.actor}}:${{ secrets.GITHUB_TOKEN }}@github.com/${{github.repository}}.git master
