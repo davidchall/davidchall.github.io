@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>David Hall</title>
+    <link>/</link>
+      <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <description>David Hall</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 28 Jun 2018 00:00:00 +0100</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>David Hall</title>
+      <link>/</link>
+    </image>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>/privacy/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>/privacy/</guid>
+      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Terms</title>
+      <link>/terms/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>/terms/</guid>
+      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Including YAML files within YAML files</title>
+      <link>/blog/2013-06-08/yaml-includes/</link>
+      <pubDate>Sat, 08 Jun 2013 00:00:00 +0000</pubDate>
+      <guid>/blog/2013-06-08/yaml-includes/</guid>
+      <description>
+&lt;script src=&#34;/rmarkdown-libs/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;&lt;em&gt;This blog post has been copied from &lt;a href=&#34;https://higgshunter.wordpress.com/2013/06/08/yaml-file-includes/&#34;&gt;my old particle physics blog&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I have written an extension to the PyYAML Loader class that allows you to include/import YAML files from within another YAML file.&lt;/p&gt;
+&lt;p&gt;I’m currently writing a program that will data from a YAML file and create a CV using a template engine. To aid flexibility, I wanted to allow the user to be able to include separate YAML files (e.g. education.yaml, skills.yaml, etc) within a master YAML file which would then be used to make the CV.&lt;/p&gt;
+&lt;p&gt;An initial search found &lt;a href=&#34;http://stackoverflow.com/questions/528281/how-can-i-include-an-yaml-file-inside-another&#34;&gt;this&lt;/a&gt;, which allows users to include a YAML file from within another. However, it’s quite a limited solution – it assumes you only want to include a single file. For my CV program, I wanted to be able to include multiple files within a single section. This could let you have separate files containing publications according to subject, and then include different groups of publications for different CVs.&lt;/p&gt;
+&lt;p&gt;My solution now supports all three kinds of YAML node: scalar, sequence and mapping. The class could alternatively derive from &lt;code&gt;yaml.CLoader&lt;/code&gt; for improved performance when the C++ LibYAML bindings are available.&lt;/p&gt;
+&lt;pre class=&#34;python&#34;&gt;&lt;code&gt;import yaml
+import os.path
+
+class Loader(yaml.Loader):
+    def __init__(self, stream):
+        self._root = os.path.split(stream.name)[0]
+        super(Loader, self).__init__(stream)
+        Loader.add_constructor(&amp;#39;!include&amp;#39;, Loader.include)
+        Loader.add_constructor(&amp;#39;!import&amp;#39;,  Loader.include)
+
+    def include(self, node):
+        if isinstance(node, yaml.ScalarNode):
+            return self.extractFile(self.construct_scalar(node))
+
+        elif isinstance(node, yaml.SequenceNode):
+            result = []
+            for filename in self.construct_sequence(node):
+                result += self.extractFile(filename)
+            return result
+
+        elif isinstance(node, yaml.MappingNode):
+            result = {}
+            for k,v in self.construct_mapping(node).iteritems():
+                result[k] = self.extractFile(v)
+            return result
+
+        else:
+            print &amp;quot;Error:: unrecognised node type in !include statement&amp;quot;
+            raise yaml.constructor.ConstructorError
+
+    def extractFile(self, filename):
+        filepath = os.path.join(self._root, filename)
+        with open(filepath, &amp;#39;r&amp;#39;) as f:
+            return yaml.load(f, Loader)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Please note that the arguments to &lt;code&gt;!include&lt;/code&gt; and &lt;code&gt;!import&lt;/code&gt; must be on the same line (due to PyYAML parser).
+This allows you to specify YAML files like:&lt;/p&gt;
+&lt;pre class=&#34;yaml&#34;&gt;&lt;code&gt;education:    !include education.yaml
+
+activities:   !include [schools.yaml, conferences.yaml, workshops.yaml]
+
+publications: !include {peer_reviewed: publications/peer_reviewed.yaml, internal: publications/internal.yaml}&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This Loader class is passed to &lt;code&gt;yaml.load()&lt;/code&gt; like so:&lt;/p&gt;
+&lt;pre class=&#34;python&#34;&gt;&lt;code&gt;from yaml import load
+
+with open(&amp;#39;document.yaml&amp;#39;, &amp;#39;r&amp;#39;) as f:
+    data = load(f, Loader=Loader)&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
