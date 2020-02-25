@@ -1,0 +1,23 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - sources
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v1
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install ghp-import
+    - name: Deploy to master branch
+      run: |
+        ghp-import -m "Generate Pelican site" -b master public
+        git push -fq https://${{ secrets.GITHUB_TOKEN }}@github.com/davidchall.github.io master
